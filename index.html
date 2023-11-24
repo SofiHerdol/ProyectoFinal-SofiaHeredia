@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Final</title>
+    <link rel="shortcut icon" href="media/WebIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Entrega Final / Rick and Morty</h1>
+            <button id="randomButton">Personaje Aleatorio</button>
+        </nav>
+    </header>
+    <main>
+        <section id="parentContainer">
+            <div id="randomCharacterContainer">
+                <div id="randomCharacter"></div>
+            </div>
+            <section id="centerContainer">
+                <div id="favoriteCharacterContainer">
+                    <h2>Personaje favorito:</h2>
+                </div>
+                <div id="searchCharacterContainer">
+                    <div id="searcher">
+                        <h2>Buscar personaje</h2>
+                        <input type="text" id="searchInput" placeholder="Ingrese el nombre del personaje">
+                        <button id="searchButton">Buscar</button>
+                        <p id="error-message" style="display: none; color: red;"></p>
+                    </div>
+                    <div id="searchResultContainer"></div>
+                </div>
+            </section>
+            <div id="firstCharacterContainer">
+                <div id="firstCharacter"></div>
+            </div>
+        </section>
+        <section id="pageContainer">
+            <h2 id="title">
+                Personajes
+            </h2>
+            <div id="characterContainer"></div>
+        </section>
+    </main>
+    <script src="data/rickandmortycharacters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
